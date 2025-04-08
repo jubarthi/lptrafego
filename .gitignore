@@ -1,0 +1,6 @@
+# Ignorar credenciais e dependˆncias
+.env
+/vendor/
+composer.json
+composer.lock
+sendEmail.php
