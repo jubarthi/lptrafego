@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jubarthi | Marketing Médico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Century Gothic', sans-serif; }
+    .pulse-red {
+      animation: pulse-red 2s infinite;
+    }
+    @keyframes pulse-red {
+      0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.7); }
+      50% { box-shadow: 0 0 25px 10px rgba(239,68,68,0.6); }
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <!-- 1. BANNER DO LIVRO CENTRALIZADO -->
+  <section class="w-full min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center">
+    <h2 class="uppercase text-yellow-400 text-4xl md:text-5xl font-bold mb-4">O LIVRO MAIS ESPERADO DO ANO</h2>
+    <p class="text-4xl md:text-5xl font-bold mb-8 leading-snug">
+      Ensinando você a alcançar seus resultados<br>
+      e não cair em golpes nas mãos de<br>
+      <span class="text-red-500">gurus da internet</span>
+    </p>
+    <img src="mockup.png" alt="Mockup Livro Marketing Médico" class="w-64 md:w-80 lg:w-96 mb-8 drop-shadow-2xl transform scale-[1.3]" />
+    <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
+      Um dos maiores empresários do Brasil, <strong class="text-white">Thiago Dias Schwanz</strong>, ensina você tudo que não querem que você saiba sobre o marketing médico.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button onclick="openForm('Livro Digital','COMPRAR AGORA','74.90')" 
+              class="pulse-red bg-red-600 text-white font-bold px-8 py-3 rounded-full text-lg hover:bg-red-700 transition">
+        LIVRO DIGITAL
+      </button>
+      <button onclick="openForm('Livro Físico','COMPRAR AGORA','79.97')" 
+              class="pulse-red bg-red-600 text-white font-bold px-8 py-3 rounded-full text-lg hover:bg-red-700 transition">
+        LIVRO FÍSICO
+      </button>
+    </div>
+  </section>
+
+  <!-- 2. DEPOIMENTOS CENTRALIZADOS -->
+  <section class="px-6 py-16 bg-zinc-900">
+    <h3 class="text-6xl font-bold text-center text-yellow-400 mb-12">O que dizem sobre a Jubarthi</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center">
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg max-w-xs text-center">
+        <p class="text-gray-300 mb-4">“Graças à Jubarthi, nosso faturamento disparou 400% em apenas 6 meses!”</p>
+        <p class="font-bold text-white">– Dra. Mariana Albuquerque</p>
+        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg max-w-xs text-center">
+        <p class="text-gray-300 mb-4">“Mais de 200 clientes conquistados em 1 ano – resultados incríveis!”</p>
+        <p class="font-bold text-white">– Dr. Ricardo Fernandes</p>
+        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg max-w-xs text-center">
+        <p class="text-gray-300 mb-4">“O atendimento da equipe Jubarthi é excepcional, sempre prontos e atenciosos.”</p>
+        <p class="font-bold text-white">– Clínica Vida & Saúde</p>
+        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg max-w-xs text-center">
+        <p class="text-gray-300 mb-4">“Autoridade instantânea: hoje somos referência na nossa região!”</p>
+        <p class="font-bold text-white">– Dr. Lucas Oliveira</p>
+        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg max-w-xs text-center">
+        <p class="text-gray-300 mb-4">“Campanhas certeiras e ROI altíssimo – recomendo 100%!”</p>
+        <p class="font-bold text-white">– Drª. Beatriz Castro</p>
+        <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SOBRE O AUTOR -->
+  <section class="px-6 md:px-20 py-16 bg-zinc-900">
+    <div class="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-8">
+      <img src="thiago.png" alt="Thiago Dias Schwanz" class="w-48 h-48 object-cover rounded-full shadow-lg" />
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-yellow-400">Thiago Dias Schwanz</h2>
+        <p class="text-gray-300 mb-2">
+          CEO da Jubarthi e apelidado de “O Vendedor de Bilhões”, Thiago transformou o marketing médico no Brasil, 
+          atuando em mais de 70% dos estados. Embarcou no Vale do Silício para apresentar inovações e hoje lidera 
+          uma agência que gera autoridade e resultados reais para clínicas e consultórios.
+        </p>
+        <p class="text-gray-300">
+          Com formações em Gestão de Pessoas, Neuromarketing, UX/UI e IA, ele alia técnica e criatividade para 
+          criar estratégias que fazem médicos venderem mais e melhor. Sua missão? Empoderar profissionais da saúde 
+          com conhecimento de ponta e práticas comprovadas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SERVIÇOS -->
+  <section class="px-6 md:px-20 py-16">
+    <h3 class="text-6xl font-bold text-center mb-8 text-yellow-400">Nossos Serviços Premium</h3>
+    <p class="max-w-3xl mx-auto text-gray-300 text-center mb-12">
+      A Jubarthi ajuda clínicas e consultórios a atrair clientes high ticket, construir autoridade online e 
+      escalar resultados com estratégias personalizadas de marketing médico. Transformamos a visão de marketing médico no Brasil em resultados concretos e duradouros.
+      Com presença em mais de 70% dos estados, somos a maior agência de marketing médico do país, referência em estratégias que geram autoridade e atraem pacientes high ticket.
+      Nossas soluções integradas de branding, tráfego pago e storytelling são pensadas para conectar médicos a quem realmente importa, elevando sua reputação e faturamento.
+      Inspirados por inovações do Vale do Silício e guiados pela paixão pela saúde, criamos campanhas personalizadas que falam diretamente com as necessidades do seu público.
+      Se você busca liderança no mercado e crescimento exponencial, a Jubarthi é seu parceiro estratégico em marketing médico no Brasil.
+    </p>
+  </section>
+
+  <!-- 5. PLANOS PRINCIPAIS -->
+  <section class="px-6 md:px-20 py-16 bg-zinc-900">
+    <h3 class="text-6xl font-bold text-center mb-8 text-yellow-400">Escolha seu Plano</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Plano Criativo -->
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg flex flex-col text-center">
+        <h4 class="text-2xl font-bold mb-2">Plano Criativo</h4>
+        <p class="text-gray-300 flex-grow">
+          Conteúdo semanal, identidade visual, artes para redes sociais e padronização completa.
+        </p>
+        <p class="line-through text-gray-500 mt-4">R$ 2.300/mês</p>
+        <p class="text-xl font-bold text-yellow-400">R$ 1.230/mês</p>
+        <button onclick="openForm('Plano Criativo','CONSULTA COM ESPECIALISTA','1230')" 
+                class="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-full">
+          CONSULTA COM ESPECIALISTA
+        </button>
+      </div>
+      <!-- Plano Gestão de Tráfego -->
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg flex flex-col text-center">
+        <h4 class="text-2xl font-bold mb-2">Plano Gestão de Tráfego</h4>
+        <p class="text-gray-300 flex-grow">
+          Gestão completa de tráfego pago, funis e métricas para médicos que querem crescer rápido.
+        </p>
+        <p class="line-through text-gray-500 mt-4">R$ 2.800/mês</p>
+        <p class="text-xl font-bold text-yellow-400">R$ 1.500/mês</p>
+        <button onclick="openForm('Plano Gestão de Tráfego','CONSULTA COM ESPECIALISTA','1500')" 
+                class="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-full">
+          CONSULTA COM ESPECIALISTA
+        </button>
+      </div>
+      <!-- Plano Gestão Completa -->
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg flex flex-col text-center">
+        <h4 class="text-2xl font-bold mb-2">Plano Gestão Completa</h4>
+        <p class="text-gray-300 flex-grow">
+          Criativo + Tráfego: estratégia 360° para autoridade e resultados escaláveis.
+        </p>
+        <p class="line-through text-gray-500 mt-4">R$ 5.400/mês</p>
+        <p class="text-xl font-bold text-yellow-400">R$ 2.647/mês</p>
+        <button onclick="openForm('Plano Gestão Completa','CONSULTA COM ESPECIALISTA','2647')" 
+                class="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-full">
+          CONSULTA COM ESPECIALISTA
+        </button>
+      </div>
+      <!-- Pacote Identidade Visual -->
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg flex flex-col text-center">
+        <h4 class="text-2xl font-bold mb-2">Pacote Identidade Visual</h4>
+        <p class="text-gray-300 flex-grow">
+          Logo, manual de marca e arquivos profissionais para impressão, bordado e digital.
+        </p>
+        <p class="line-through text-gray-500 mt-4">R$ 12.800</p>
+        <p class="text-xl font-bold text-yellow-400">R$ 4.500 à vista</p>
+        <button onclick="openForm('Pacote Identidade Visual','EU QUERO!','4500')" 
+                class="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-full">
+          EU QUERO!
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CARDS RESIDENTE & ALUNO -->
+  <section class="px-6 md:px-20 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg flex flex-col text-center">
+        <h4 class="text-2xl font-bold mb-2">Plano Marketing Residente</h4>
+        <p class="text-gray-300 flex-grow">
+          Para médicos residentes que querem entrar no mercado com autoridade desde já.
+        </p>
+        <button onclick="openForm('Plano Marketing Residente','CONSULTA COM ESPECIALISTA','')" 
+                class="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-full">
+          CONSULTA COM ESPECIALISTA
+        </button>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-xl shadow-lg flex flex-col text-center">
+        <h4 class="text-2xl font-bold mb-2">Plano Marketing Aluno Médico</h4>
+        <p class="text-gray-300 flex-grow">
+          Para estudantes de medicina que já pensam no posicionamento profissional.
+        </p>
+        <button onclick="openForm('Plano Marketing Aluno Médico','CONSULTA COM ESPECIALISTA','')" 
+                class="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded-full">
+          CONSULTA COM ESPECIALISTA
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. MODAL DE FORMULÁRIO -->
+  <div id="form-overlay" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
+    <div class="bg-zinc-800 p-8 rounded-xl max-w-md w-full relative">
+      <button onclick="closeForm()" class="absolute top-4 right-4 text-gray-400 hover:text-white">✕</button>
+      <h3 id="form-title" class="text-2xl font-bold mb-4 text-yellow-400">Título</h3>
+      <form id="lp-form" class="space-y-4">
+        <input type="hidden" id="input-product" name="product" value="">
+        <input type="hidden" id="input-value"   name="value"   value="">
+        <div>
+          <label class="block text-gray-300 mb-1">Nome completo</label>
+          <input type="text" name="name" required class="w-full p-2 rounded bg-zinc-700 text-white" />
+        </div>
+        <div>
+          <label class="block text-gray-300 mb-1">WhatsApp</label>
+          <input type="tel" name="whatsapp" required class="w-full p-2 rounded bg-zinc-700 text-white" />
+        </div>
+        <div>
+          <label class="block text-gray-300 mb-1">E‑mail</label>
+          <input type="email" name="email" required class="w-full p-2 rounded bg-zinc-700 text-white" />
+        </div>
+        <div>
+          <label class="block text-gray-300 mb-1">CPF</label>
+          <input type="text" name="cpf" required class="w-full p-2 rounded bg-zinc-700 text-white" />
+        </div>
+        <div>
+          <label class="block text-gray-300 mb-1">Profissão</label>
+          <select name="profession" required class="w-full p-2 rounded bg-zinc-700 text-white">
+            <option value="">Selecione...</option>
+            <option value="MÉDICO">MÉDICO</option>
+            <option value="PROFISSIONAL DA SAÚDE">PROFISSIONAL DA SAÚDE</option>
+            <option value="OUTRO">OUTRO</option>
+          </select>
+        </div>
+        <button id="form-submit" type="submit" 
+                class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-full">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 8. GHOST SEO CONTENT -->
+  <div class="hidden">
+    <p>
+      marketing médico, marketing para médicos, marketing médico digital, marketing para residentes de medicina,
+      marketing para estudantes de medicina, abrir clínica particular, clínica nova, autoridade médica na internet,
+      agência de marketing para médicos, posicionamento profissional para médicos, marketing de consultório,
+      marketing de clínicas, marketing médico online, marketing para dentistas, marketing para saúde, estratégias
+      de marketing médico, SEO para clínicas, SEO para médicos, funil de vendas para médicos, inbound marketing médico.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
