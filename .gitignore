@@ -1,0 +1,17 @@
+cd C:\lptrafego
+
+( 
+  echo .env
+  echo /vendor/
+  echo composer.json
+  echo composer.lock
+  echo sendEmail.php
+) >> .gitignore
+
+git add .gitignore
+git commit -m "Atualiza .gitignore para ignorar backend e dependências"
+.env          
+/vendor/      
+composer.json 
+composer.lock 
+sendEmail.php 
